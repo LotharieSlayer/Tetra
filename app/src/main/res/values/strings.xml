@@ -1,0 +1,17 @@
+<resources>
+    <!-- Home -->
+    <string name="app_name">Tetra</string>
+    <string name="play">Jouer</string>
+    <string name="rumble_mode">Rumble mode</string>
+    <string name="highscore">High Score</string>
+
+    <!-- Settings -->
+    <string name="settings">Réglages</string>
+    <string name="account">Votre compte</string>
+    <string name="pseudoAsk">Entrez votre pseudo</string>
+    <string name="ok">OK</string>
+
+    <!-- Game.java -->
+    <string name="game">Jeu</string>
+
+</resources>

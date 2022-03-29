@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:layout_margin="10dp"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|end">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/settings"
+            android:gravity="center"
+            android:onClick="settings" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/play"
+            android:textSize="30dp"
+            android:onClick="play"
+            android:fontFamily="@font/dnpro"
+            android:textStyle="italic"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rumble_mode"
+            android:gravity="center"
+            android:onClick="rumble"
+            android:textSize="20dp"
+            android:fontFamily="@font/dnpro"
+            android:textStyle="italic"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/highscore"
+            android:gravity="center"
+            android:onClick="highscore"
+            android:fontFamily="@font/dnpro"
+            android:textStyle="italic"
+            android:layout_marginBottom="100dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
