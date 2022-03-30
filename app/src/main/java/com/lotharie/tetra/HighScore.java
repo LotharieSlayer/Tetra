@@ -1,5 +1,6 @@
 package com.lotharie.tetra;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -7,23 +8,21 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class HighScore extends Activity {
 
-public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         fullscreen();
 
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_highscore);
+
     }
+
 
     public void fullscreen() {
         // Enlever la barre de notifications
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        // Enlever la barre de titre
-        getSupportActionBar().hide();
 
         // Enlever la barre de navigation
         if(Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19) { // lower api
@@ -37,22 +36,9 @@ public class Home extends AppCompatActivity {
         }
     }
 
-    public void settings(View view){
-        Intent settingsIntent = new Intent(this, Settings.class);
-        startActivity(settingsIntent);
+    public void home(View view){
+        Intent homeIntent = new Intent(this, Home.class);
+        startActivity(homeIntent);
     }
 
-    public void play(View view){
-        Intent gameIntent = new Intent(this, Game.class);
-        startActivity(gameIntent);
-    }
-
-    public void rumble(View view){
-
-    }
-
-    public void highscore(View view){
-        Intent highscoreIntent = new Intent(this, HighScore.class);
-        startActivity(highscoreIntent);
-    }
 }

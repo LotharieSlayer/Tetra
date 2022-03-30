@@ -3,7 +3,7 @@
     <string name="app_name">Tetra</string>
     <string name="play">Jouer</string>
     <string name="rumble_mode">Rumble mode</string>
-    <string name="highscore">High Score</string>
+    <string name="highscore">HighScore</string>
 
     <!-- Settings -->
     <string name="settings">Réglages</string>
@@ -13,5 +13,8 @@
 
     <!-- Game.java -->
     <string name="game">Jeu</string>
+
+    <!-- High Score -->
+
 
 </resources>

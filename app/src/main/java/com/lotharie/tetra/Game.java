@@ -1,12 +1,17 @@
 package com.lotharie.tetra;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
 public class Game extends Activity {
+
+    int lignes = 20;
+    int colonnes = 10;
+    int score;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +40,9 @@ public class Game extends Activity {
     }
 
     public void pauseMenu(View view){
-
         // Close pour le moment
-
+        Intent homeIntent = new Intent(this, Home.class);
+        startActivity(homeIntent);
     }
 
 }

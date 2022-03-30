@@ -28,6 +28,10 @@
             android:name=".Game"
             android:label="@string/game">
         </activity>
+        <activity
+            android:name=".HighScore"
+            android:label="@string/highscore">
+        </activity>
 
     </application>
 
