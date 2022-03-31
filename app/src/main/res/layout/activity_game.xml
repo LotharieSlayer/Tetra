@@ -10,33 +10,44 @@
     tools:context=".Game">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="top|end">
+        android:orientation="horizontal"
+        android:layout_gravity="top|start">
 
-        <Button
-            android:layout_width="40dp"
+        <ImageView
+            android:layout_width="120dp"
             android:layout_height="40dp"
-            android:background="@drawable/pause"
-            android:gravity="center"
-            android:onClick="pauseMenu"
-            android:fontFamily="@font/dnpro"
-            android:textStyle="normal"/>
+            android:src="@drawable/logo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_gravity="top|end">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/pause"
+                android:fontFamily="@font/dnpro"
+                android:gravity="end"
+                android:onClick="pauseMenu"
+                android:textStyle="normal" />
+        </RelativeLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/account"
-        android:fontFamily="@font/dnpro"
-        android:textStyle="italic"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="top|center">
+
+        <com.lotharie.tetra.MyTetraView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 </LinearLayout>
