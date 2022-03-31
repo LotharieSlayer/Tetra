@@ -25,4 +25,7 @@ Liste de tâches initiale pour le projet :
   
 Liste des choses à régler :
 
-``  Layout de l'activité Game``
+``
+  Layout de l'activité Game
+  Gestion des pseudos et de la ViewList vide dans HighScore
+``
