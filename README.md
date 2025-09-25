@@ -3,7 +3,7 @@ Tetris sur Android (projet scolaire)
 
 Liste de tâches initiale pour le projet :
 
-``menu lancement
+```menu lancement
   paramètres du jeu (pseudo, autres options (musique, sfx, vibrations)
   jeu (touher)
     tableau Blocs (int)
@@ -21,11 +21,12 @@ Liste de tâches initiale pour le projet :
   high score mode secouage pour éviter de set ça dans le vrai high score
   gyroscope pour déplacer les pièces (ajout dans les paramètres du choix gyro/touches)
   les high score effectué aux gyro auront un petit badge pour avoir été effectué au gyro
-  mode nuit android``
+  mode nuit android
+```
   
 Liste des choses à régler :
 
-``
+```
   Layout de l'activité Game
   Gestion des pseudos et de la ViewList vide dans HighScore
-``
+```
